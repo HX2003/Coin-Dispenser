@@ -1,0 +1,20 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Coin_Dispenser KEYWORD1
+ 
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+dispense KEYWORD2
+setSpeed KEYWORD2
+readState KEYWORD2
+readQueuedCount KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+#yourLITERAL	LITERAL1
