@@ -4,7 +4,7 @@
 static const int sensorPin = 6; //Output from the TCRT5000 IR sensor
 static const int servoPin = 7;
 
-#define SLAVE_ADDRESS 0x78
+#define SLAVE_ADDRESS 0x79
 
 #define REG_DISPENSE 0x01 //WRITE
 #define REG_DISPENSE_QUEUED 0x02 //READ
@@ -39,7 +39,8 @@ void setup() {
   dispense_low = digitalRead(sensorPin);
   //For debugging only
   Serial.begin(115200);
-  Serial.println("I2C Slave ready!");
+  Serial.print(F("I2C Slave ready @ address 0x"));
+  Serial.println(SLAVE_ADDRESS, HEX);
   old_millis = millis();
   read_millis = millis();
 }
